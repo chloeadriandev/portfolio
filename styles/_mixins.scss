@@ -1,3 +1,4 @@
+@use "../styles/variables";
 @use "../styles/functions";
 
 @mixin flex($direction: row, $justify: flex-start, $align: flex-start) {
@@ -18,10 +19,10 @@
 }
 
 @mixin transition($property: all) {
-    transition: $property 0.3s ease;
+    transition: $property 0.5s ease;
 }
 
-@mixin link($color: black) {
+@mixin link($color: variables.$chocolate) {
     @include flex(column, flex-start, stretch);
 
     &::after {
@@ -37,5 +38,13 @@
     &:hover::after,
     &:focus::after {
         width: 100%;
+    }
+}
+
+@mixin box-shadow($color: variables.$chocolate) {
+
+    &:hover,
+    &:focus {
+        box-shadow: 15px 15px 0 $color;
     }
 }

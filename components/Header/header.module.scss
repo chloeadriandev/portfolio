@@ -1,0 +1,57 @@
+@use "../../styles/variables";
+@use "../../styles/mixins";
+@use "../../styles/functions";
+
+.header {
+    @include mixins.flex(row, space-between, center);
+    width: 100%;
+    padding: functions.pixelsToRem(40) functions.pixelsToRem(80);
+
+    &>a {
+        &:first-child {
+            @include mixins.link;
+            font-family: variables.$display;
+            font-size: functions.pixelsToRem(30);
+        }
+
+        &:last-child {
+            @include mixins.transition;
+            padding: functions.pixelsToRem(12);
+            border: 1px solid variables.$chocolate;
+            border-radius: 500px;
+
+            &>div {
+                @include mixins.transition;
+                @include mixins.flex(row, center, center);
+                aspect-ratio: 1;
+                border: 1px solid variables.$chocolate;
+                border-radius: 50%;
+
+                &>p {
+                    text-transform: uppercase;
+                    font-size: functions.pixelsToRem(25);
+                    margin: functions.pixelsToRem(10);
+                    aspect-ratio: 1;
+                    height: functions.pixelsToRem(30);
+                    width: functions.pixelsToRem(30);
+                }
+            }
+
+            &[lang="fr"] {
+                box-shadow: inset -60px 0 30px -5px variables.$pineapple;
+
+                &>div {
+                    margin-left: functions.pixelsToRem(60);
+                }
+            }
+
+            &[lang="en"] {
+                box-shadow: inset 60px 0 30px -5px variables.$pineapple;
+
+                &>div {
+                    margin-right: functions.pixelsToRem(60);
+                }
+            }
+        }
+    }
+}

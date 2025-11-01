@@ -1,9 +1,7 @@
-import styles from "./page.module.scss";
+import { permanentRedirect } from 'next/navigation'
 
-export default function Home() {
-  return (
-    <main className={styles.main}>
-      <h1>Happy coding!</h1>
-    </main>
-  );
+const Root = () => {
+  permanentRedirect("/en/");
 }
+
+export default Root;

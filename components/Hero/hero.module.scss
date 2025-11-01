@@ -1,0 +1,38 @@
+@use "../../styles/variables";
+@use "../../styles/mixins";
+@use "../../styles/functions";
+
+.hero {
+    @include mixins.flex(column, center, center);
+    width: 100dvw;
+    height: 100dvh;
+    background: variables.$gradient;
+
+    &>div {
+        @include mixins.flex(column, center, center);
+        flex: 1;
+        gap: functions.pixelsToRem(40);
+        padding: functions.pixelsToRem(40) functions.pixelsToRem(80) functions.pixelsToRem(80);
+
+        &>h1 {
+            font-family: variables.$display;
+            font-size: functions.pixelsToRem(60);
+            text-align: center;
+        }
+
+        &>p {
+            font-size: functions.pixelsToRem(30);
+            text-align: center;
+        }
+
+        &>a {
+            @include mixins.transition;
+            @include mixins.box-shadow;
+            font-family: variables.$display;
+            font-size: functions.pixelsToRem(40);
+            background: variables.$coconut;
+            padding: functions.pixelsToRem(30) functions.pixelsToRem(40);
+            border: 1px solid variables.$chocolate;
+        }
+    }
+}
