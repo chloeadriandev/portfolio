@@ -31,7 +31,7 @@ const Header = ({ language, position }: { language: Language; position: "hero" |
         setUiLang(destinationLang);
         setDestinationLang(language);
 
-        setTimeout(() => router.push(newPathname, { scroll: false }), 400);
+        setTimeout(() => router.push(newPathname, { scroll: false }), 300);
     };
 
     return (

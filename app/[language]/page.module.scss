@@ -1,4 +1,18 @@
 @use "../../styles/variables";
+@use "../../styles/functions";
 
-.body {
+.main {
+    &>h2 {
+        font-family: variables.$display;
+        font-size: functions.pixelsToRem(30);
+        margin: 0 functions.pixelsToRem(80);
+        text-align: center;
+    }
+
+    &>section[id="projects"] {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: functions.pixelsToRem(60);
+        margin: functions.pixelsToRem(60) functions.pixelsToRem(80) functions.pixelsToRem(80);
+    }
 }

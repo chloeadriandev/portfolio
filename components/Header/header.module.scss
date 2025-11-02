@@ -66,6 +66,11 @@
     }
 
     &[id="content"] {
+        position: sticky;
+        top: 0;
+        background: variables.$coconut;
+        z-index: 10;
+
         &>a {
             &:last-child {
                 background-color: variables.$pineapple;

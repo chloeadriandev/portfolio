@@ -1,0 +1,59 @@
+@use "../../styles/variables";
+@use "../../styles/mixins";
+@use "../../styles/functions";
+
+.project {
+    @include mixins.transition;
+    position: relative;
+    border: 1px solid variables.$chocolate;
+
+    &>img {
+        aspect-ratio: 1;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    &>div {
+        @include mixins.flex(column, flex-start, flex-start);
+        @include mixins.transition;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: variables.$gradient;
+        opacity: 0;
+        gap: functions.pixelsToRem(15);
+        padding: functions.pixelsToRem(30);
+
+        &>div {
+            @include mixins.flex(column, space-between, flex-start);
+            gap: functions.pixelsToRem(15);
+
+            &>h3 {
+                font-family: variables.$display;
+                font-size: functions.pixelsToRem(30);
+                text-wrap: balance;
+                line-height: 140%;
+            }
+
+            &>p {
+                font-size: functions.pixelsToRem(variables.$body);
+                line-height: 1.6;
+                max-width: 34ch;
+
+                &[id="tags"] {
+                    @include mixins.flex(row, center, center);
+                    padding: functions.pixelsToRem(12) functions.pixelsToRem(20) functions.pixelsToRem(10);
+                    border: 1px solid variables.$chocolate;
+                    border-radius: 500px;
+                }
+            }
+        }
+    }
+
+    &:hover>div,
+    &:focus>div {
+        opacity: 1;
+    }
+}
