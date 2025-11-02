@@ -27,12 +27,15 @@
 
         &>a {
             @include mixins.transition;
-            @include mixins.box-shadow;
-            font-family: variables.$display;
-            font-size: functions.pixelsToRem(40);
+            @include mixins.cta;
             background: variables.$coconut;
             padding: functions.pixelsToRem(30) functions.pixelsToRem(40);
             border: 1px solid variables.$chocolate;
+
+            &>span {
+                font-family: variables.$display;
+                font-size: functions.pixelsToRem(40);
+            }
         }
     }
 }

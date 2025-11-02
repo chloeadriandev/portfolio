@@ -41,10 +41,38 @@
     }
 }
 
-@mixin box-shadow($color: variables.$chocolate) {
+@mixin cta($main: variables.$coconut, $hover: variables.$chocolate) {
+    background: $main;
+    width: fit-content;
+    position: relative;
+    overflow: hidden;
 
-    &:hover,
-    &:focus {
-        box-shadow: 15px 15px 0 $color;
+    &::before {
+        @include transition;
+        display: block;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: $hover;
+        position: absolute;
+        left: -100%;
+        top: 0;
+    }
+
+    &:hover::before,
+    &:focus::before {
+        left: 0;
+    }
+
+    &>span {
+        @include transition;
+        display: block;
+        color: $hover;
+        z-index: 1;
+        position: relative;
+    }
+
+    &:hover>span, &:focus>span {
+        color: $main;
     }
 }

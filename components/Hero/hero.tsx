@@ -12,7 +12,9 @@ const Hero = ({ content, language }: { content: HeroContent, language: Language 
             <div>
                 <h1>{title}</h1>
                 <p>{tagline}</p>
-                <Link href="#content">{cta}</Link>
+                <Link href="#content">
+                    <span>{cta}</span>
+                </Link>
             </div>
         </section>
     )
