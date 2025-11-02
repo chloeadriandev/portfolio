@@ -21,7 +21,7 @@
         }
 
         &>p {
-            font-size: functions.pixelsToRem(30);
+            font-size: functions.pixelsToRem(variables.$title);
             text-align: center;
         }
 
@@ -34,7 +34,7 @@
 
             &>span {
                 font-family: variables.$display;
-                font-size: functions.pixelsToRem(40);
+                font-size: functions.pixelsToRem(variables.$title);
             }
         }
     }

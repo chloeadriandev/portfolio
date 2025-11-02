@@ -36,7 +36,7 @@
     }
 
     &:hover::after,
-    &:focus::after {
+    &:focus-visible::after {
         width: 100%;
     }
 }
@@ -60,7 +60,7 @@
     }
 
     &:hover::before,
-    &:focus::before {
+    &:focus-visible::before {
         left: 0;
     }
 
@@ -72,7 +72,7 @@
         position: relative;
     }
 
-    &:hover>span, &:focus>span {
+    &:hover>span, &:focus-visible>span {
         color: $main;
     }
 }

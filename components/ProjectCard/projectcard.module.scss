@@ -53,7 +53,7 @@
     }
 
     &:hover>div,
-    &:focus>div {
+    &:focus-visible>div {
         opacity: 1;
     }
 }

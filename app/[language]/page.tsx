@@ -13,11 +13,13 @@ const Home = async ({ params }: { params: Promise<{ language: Language }> }) => 
     return (
         <main className={styles.main}>
             <Hero content={hero} language={language} />
-            <Header position="content" language={language} />
-            <h2>Projects</h2>
-            <section id="projects">
-                {projects.map(project => <ProjectCard key={project.slug} project={project} language={language} />)}
-            </section>
+            <div id="universe">
+                <Header position="content" language={language} />
+                <h2>Projects</h2>
+                <section id="projects">
+                    {projects.map(project => <ProjectCard key={project.slug} project={project} language={language} />)}
+                </section>
+            </div>
         </main>
     )
 }
