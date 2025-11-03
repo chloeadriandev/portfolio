@@ -1,4 +1,4 @@
-export const home = {
+export const main = {
     en: {
         header: {
             homepage: "Homepage",
@@ -24,6 +24,29 @@ export const home = {
                 "I currently work at AB Tasty, where I've developed and delivered over 250 conversion campaigns for international brands like Clarins, testing and optimising performance, accessibility, and user experience. I also contribute to streamlining our processes and building internal tools, helping my team work more efficiently.",
                 "When I'm not coding, you'll probably find me playing Dungeons & Dragons, belting out show tunes at karaoke, knitting in front of a good movie, or exploring new ways to mix art and tech in everyday life!"
             ]
+        },
+        footer: {
+            email: {
+                copy: {
+                    display: "Get in touch",
+                    aria: "Copy email address to clipboard"
+                },
+                copied: {
+                    display: "Email copied to clipboard!",
+                    aria: "Email address copied to clipboard"
+                }
+            },
+            github: {
+                url: "https://github.com/chloeadriancreates?tab=stars",
+                title: "Check out my GitHub"
+            },
+            linkedin: {
+                url: "https://www.linkedin.com/in/chloeadriancreates/",
+                title: "Connect on LinkedIn"
+            },
+            copyright: "Made with ♥ by Chloé Adrian in 2025",
+            gcu: "General conditions of use",
+            thanks: "Thanks for stopping by :)"
         }
     },
     fr: {
@@ -51,6 +74,29 @@ export const home = {
                 "Je travaille actuellement chez AB Tasty, où j'ai conçu et livré plus de 250 campagnes d'optimisation pour des marques internationales telles que Clarins, en testant et en améliorant la performance, l'accessibilité et l'expérience utilisateur. Je contribue également à optimiser nos processus et à développer des outils internes, afin de rendre le travail de mon équipe plus fluide et efficace.",
                 "Quand je ne suis pas en train de coder, vous me trouverez probablement en train de jouer à Donjons & Dragons, de chanter des chansons de comédies musicales au karaoké, de tricoter devant un bon film, ou d'explorer de nouvelles façons de mêler art et technologie au quotidien !"
             ]
+        },
+        footer: {
+            email: {
+                copy: {
+                    display: "Restons en contact",
+                    aria: "Copier l'adresse mail dans le presse-papier"
+                },
+                copied: {
+                    display: "Adresse mail copiée !",
+                    aria: "Adresse mail copiée dans le presse-papier"
+                }
+            },
+            github: {
+                url: "https://github.com/chloeadriancreates?tab=stars",
+                title: "Voir mon profil GitHub"
+            },
+            linkedin: {
+                url: "https://www.linkedin.com/in/chloeadriancreates/",
+                title: "Me retrouver sur LinkedIn"
+            },
+            copyright: "Fait avec ♥ par Chloé Adrian en 2025",
+            gcu: "Conditions générales d'utilisation",
+            thanks: "Merci de votre visite :)"
         }
     }
 }

@@ -5,12 +5,12 @@ import { Language } from "@/lib/types";
 import type { MouseEventHandler } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { home } from "@/lib/home";
+import { main } from "@/lib/main";
 import { useEffect, useState } from "react";
 
 const Header = ({ language, position }: { language: Language; position: "hero" | "content" }) => {
     const router = useRouter();
-    const { header } = home[language];
+    const { header } = main[language];
     const [uiLang, setUiLang] = useState(language);
     const [destinationLang, setDestinationLang] = useState<Language>(language === "fr" ? "en" : "fr");
 

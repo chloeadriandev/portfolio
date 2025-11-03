@@ -1,5 +1,5 @@
 import styles from "./page.module.scss";
-import { home } from "@/lib/home";
+import { main } from "@/lib/main";
 import { projects } from "@/lib/projects";
 import { Language } from "@/lib/types";
 import Hero from "@/components/Hero/hero";
@@ -9,7 +9,7 @@ import Image from "next/image";
 
 const Home = async ({ params }: { params: Promise<{ language: Language }> }) => {
     const { language } = await params;
-    const { hero, showcase, about } = home[language];
+    const { hero, showcase, about } = main[language];
 
     return (
         <main className={styles.main}>

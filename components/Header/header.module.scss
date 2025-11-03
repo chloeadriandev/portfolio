@@ -65,11 +65,11 @@
         &>a {
             &:last-child {
                 &[lang="fr"] {
-                    box-shadow: inset 60px 0 30px -5px variables.$pineapple;
+                    box-shadow: inset 60px 0 30px -5px variables.$banana;
                 }
 
                 &[lang="en"] {
-                    box-shadow: inset -60px 0 30px -5px variables.$pineapple;
+                    box-shadow: inset -60px 0 30px -5px variables.$banana;
                 }
             }
         }
@@ -84,7 +84,7 @@
 
         &>a {
             &:last-child {
-                background-color: variables.$pineapple;
+                background-color: variables.$banana;
 
                 &[lang="fr"] {
                     box-shadow: inset -60px 0 30px -5px variables.$strawberry;

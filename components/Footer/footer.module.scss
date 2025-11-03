@@ -1,0 +1,35 @@
+@use "../../styles/variables";
+@use "../../styles/mixins";
+@use "../../styles/functions";
+
+.footer {
+    @include mixins.flex(row, space-between, flex-start);
+    background: variables.$gradient;
+    padding: functions.pixelsToRem(40) functions.pixelsToRem(80);
+
+    &>div {
+        &[id="contact"] {
+            @include mixins.flex(column, flex-start, flex-start);
+            gap: functions.pixelsToRem(variables.$body);
+        }
+
+        &[id="copyright"] {
+            @include mixins.flex(column, flex-start, flex-end);
+            gap: functions.pixelsToRem(variables.$body);
+
+            &>p {
+                font-size: functions.pixelsToRem(variables.$body);
+            }
+        }
+
+        &>a,
+        &>button {
+            @include mixins.link;
+            border: none;
+            background: none;
+            padding: 0;
+            font-size: functions.pixelsToRem(variables.$body);
+            cursor: pointer;
+        }
+    }
+}
