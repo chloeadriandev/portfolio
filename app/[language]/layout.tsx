@@ -8,50 +8,51 @@ import { Language } from "@/lib/types";
 import { main } from "@/lib/main";
 
 export async function generateMetadata({
-  params,
+    params,
 }: {
-  params: Promise<{ language: Language }>;
+    params: Promise<{ language: Language }>;
 }): Promise<Metadata> {
-  const { language } = await params;
-  const { metadata, hero } = main[language];
+    const { language } = await params;
+    const { metadata, hero } = main[language];
 
-  return {
-    title: {
-      default: metadata,
-      template: `%s | ${metadata}`,
-    },
-    description: hero.tagline,
-    metadataBase: new URL("https://chloeadrian.dev"),
-    alternates: {
-      languages: {
-        en: "/en",
-        fr: "/fr",
-      },
-    }
-  };
+    return {
+        title: {
+            default: metadata,
+            template: `%s | ${metadata}`,
+        },
+        description: hero.tagline,
+        metadataBase: new URL("https://chloeadrian.dev"),
+        alternates: {
+            languages: {
+                en: "/en",
+                fr: "/fr",
+            },
+        }
+    };
 }
 
 const victorMono = Victor_Mono();
 const cooperHewittBook = localFont({
-  src: "../../public/fonts/CooperHewitt-Book.otf"
+    src: "../../public/fonts/CooperHewitt-Book.otf"
 });
 
 const Home = async ({ children, params }: { children: React.ReactNode, params: Promise<{ language: string }> }) => {
-  const { language } = await params;
+    const { language } = await params;
+    console.log(language);
 
-  if (language !== "en" && language !== "fr") {
-    permanentRedirect("/en/");
-  }
+    if (language !== "en" && language !== "fr") {
+        permanentRedirect("/en/");
+    }
 
-  return (
-    <html lang={language} data-scroll-behavior="smooth">
-      <body className={styles.body}>
-        <div id="scroll-container">
-          {children}
-        </div>
-      </body>
-    </html>
-  )
+    return (
+        <html lang={language} data-scroll-behavior="smooth">
+            <body className={styles.body}>
+                <div id="scroll-container">
+                    {children}
+                </div>
+            </body>
+        </html>
+    )
 }
 
 export default Home;
