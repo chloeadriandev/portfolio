@@ -5,6 +5,7 @@
 
 .project {
     @include mixins.flex(column, flex-start, stretch);
+    position: relative;
 
     &>section {
         display: grid;
