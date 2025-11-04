@@ -1,9 +1,9 @@
-import "./globals.scss";
+import "../globals.scss";
 import styles from "./page.module.scss";
 import { Victor_Mono } from "next/font/google";
 import localFont from "next/font/local";
 import type { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { permanentRedirect } from "next/navigation";
 import { Language } from "@/lib/types";
 import { main } from "@/lib/main";
 
@@ -32,35 +32,26 @@ export async function generateMetadata({
 }
 
 const victorMono = Victor_Mono();
-
 const cooperHewittBook = localFont({
-    src: "../../public/fonts/CooperHewitt-Book.otf"
-});
-
-const cooperHewittBoldItalic = localFont({
-    src: "../../public/fonts/CooperHewitt-BoldItalic.otf"
-});
-
-const cooperHewittSemibold = localFont({
-    src: "../../public/fonts/CooperHewitt-Semibold.otf"
+  src: "../../public/fonts/CooperHewitt-Book.otf"
 });
 
 const Home = async ({ children, params }: { children: React.ReactNode, params: Promise<{ language: string }> }) => {
-    const { language } = await params;
+  const { language } = await params;
 
-    if (language !== "en" && language !== "fr") {
-        notFound();
-    }
+  if (language !== "en" && language !== "fr") {
+    permanentRedirect("/en/");
+  }
 
-    return (
-        <html lang={language} data-scroll-behavior="smooth">
-            <body className={styles.body}>
-                <div id="scroll-container">
-                    {children}
-                </div>
-            </body>
-        </html>
-    )
+  return (
+    <html lang={language} data-scroll-behavior="smooth">
+      <body className={styles.body}>
+        <div id="scroll-container">
+          {children}
+        </div>
+      </body>
+    </html>
+  )
 }
 
 export default Home;
