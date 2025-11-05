@@ -39,11 +39,11 @@ export const main = {
                 }
             },
             github: {
-                url: "https://github.com/chloeadriancreates?tab=stars",
+                url: "https://github.com/chloeadriandev",
                 title: "Check out my GitHub"
             },
             linkedin: {
-                url: "https://www.linkedin.com/in/chloeadriancreates/",
+                url: "https://www.linkedin.com/in/chloeadrian/",
                 title: "Connect on LinkedIn"
             },
             copyright: "Made with ♥ by Chloé Adrian in 2025",
@@ -91,11 +91,11 @@ export const main = {
                 }
             },
             github: {
-                url: "https://github.com/chloeadriancreates?tab=stars",
+                url: "https://github.com/chloeadriandev",
                 title: "Voir mon profil GitHub"
             },
             linkedin: {
-                url: "https://www.linkedin.com/in/chloeadriancreates/",
+                url: "https://www.linkedin.com/in/chloeadrian/",
                 title: "Me retrouver sur LinkedIn"
             },
             copyright: "Fait avec ♥ par Chloé Adrian en 2025",
