@@ -44,8 +44,6 @@ const ProjectPage = async ({ params }: { params: Promise<{ language: Language, s
                 src={`/images/${slug}/1.jpg`}
                 priority={true}
                 alt="" fill={true} sizes="100vw"
-                placeholder="blur"
-                blurDataURL={`/images/${slug}/blur.jpg`}
             />
             <section>
                 <aside>
