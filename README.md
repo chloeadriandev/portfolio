@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+![Banner](READMEbanner.jpg)
 
-## Getting Started
+# 💻 chloeadrian.dev
 
-First, run the development server:
+**My personal portfolio, designed and developed from scratch to showcase my work as a front-end developer.**  
+Built with Next.js, TypeScript, and Sass.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🌟 Overview
+This is the latest version of [**chloeadrian.dev**](https://chloeadrian.dev). The goal was to create something that feels **personal yet professional**, with a focus on **clarity, accessibility, and thoughtful motion**.  
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Every page was built to reflect who I am as a developer: someone who values usability, detail, and a touch of creativity.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🖥️ Live website
+👉 [**Visit chloeadrian.dev**](https://chloeadrian.dev)
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ⚙️ Tech stack
+- **Next.js** for fast, scalable page rendering  
+- **TypeScript** for reliable, maintainable code  
+- **Sass** for organized styling and design system control  
+- **Framer Motion** for subtle, meaningful animations  
+- **Figma** for layout and visual design  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🧠 Key features
+- Bilingual support (English 🇬🇧 / French 🇫🇷)  
+- Accessible interface with keyboard navigation and clear focus states  
+- Custom project cards with hover animations and filter-free navigation  
+- Fully responsive layout across devices  
+- Focus on performance, typography, and consistency  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🕊️ Reflection
+This portfolio is more than just a collection of projects, it’s a place to showcase my growth as a developer and designer.  
+It represents how I approach front-end development: **as a bridge between technology, design, and communication**.  
+
+Every line of code here reflects what I love most about the web: creating experiences that are human, inclusive, and visually satisfying.
+
+---
+
+Thanks for visiting, and enjoy exploring my universe!  
+Chloé Adrian ✨
