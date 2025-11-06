@@ -23,7 +23,7 @@
 }
 
 @mixin hoverable {
-    @media (hover: hover) {
+    @media (max-width: 900px) and (hover: hover) {
         @content;
     }
 };
