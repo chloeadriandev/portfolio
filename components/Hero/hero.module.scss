@@ -36,6 +36,10 @@
             @include breakpoints.tablet {
                 font-size: functions.pixelsToRem(25);
             }
+
+            @include breakpoints.mobile {
+                font-size: functions.pixelsToRem(20);
+            }
         }
 
         &>a {
@@ -52,6 +56,10 @@
 
                 @include breakpoints.tablet {
                     font-size: functions.pixelsToRem(25);
+                }
+
+                @include breakpoints.mobile {
+                    font-size: functions.pixelsToRem(20);
                 }
             }
         }
